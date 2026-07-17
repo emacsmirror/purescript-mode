@@ -1,4 +1,5 @@
 [![MELPA](https://melpa.org/packages/purescript-mode-badge.svg)](https://melpa.org/#/purescript-mode)
+[![MELPA Stable](https://stable.melpa.org/packages/purescript-mode-badge.svg)](https://stable.melpa.org/#/purescript-mode)
 [![Build Status](https://github.com/purescript-emacs/purescript-mode/workflows/CI/badge.svg)](https://github.com/purescript-emacs/purescript-mode/actions)
 
 This Emacs package provides indentation, syntax highlighting, and other facilities for PureScript language.
