@@ -11,7 +11,7 @@
 ;;          2014      Tim Dysinger <tim@dysinger.net>
 ;; Keywords: faces files PureScript
 ;; URL: https://github.com/purescript-emacs/purescript-mode
-;; Package-Version: @VERSION@
+;; Package-Version: 14.0
 ;; Package-Requires: ((emacs "25.1"))
 
 ;; This file is not part of GNU Emacs.
@@ -42,30 +42,6 @@
 (cl-eval-when 'compile (require 'find-file))
 
 ;; All functions/variables start with `(literate-)purescript-'.
-
-;; Version of mode.
-(defconst purescript-version "@VERSION@"
-  "The release version of `purescript-mode'.")
-
-(defconst purescript-git-version "@GIT_VERSION@"
-  "The Git version of `purescript-mode'.")
-
-;;;###autoload
-(defun purescript-version (&optional here)
-  "Show the `purescript-mode` version in the echo area.
-With prefix argument HERE, insert it at point.
-When FULL is non-nil, use a verbose version string.
-When MESSAGE is non-nil, display a message with the version."
-  (interactive "P")
-  (let* ((purescript-mode-dir (ignore-errors
-                             (file-name-directory (or (locate-library "purescript-mode") ""))))
-         (version (format "purescript-mode version %s (%s @ %s)"
-                           purescript-version
-                           purescript-git-version
-                           purescript-mode-dir)))
-    (if here
-        (insert version)
-      (message "%s" version))))
 
 (defgroup purescript nil
   "Major mode for editing PureScript programs."
